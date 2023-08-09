@@ -22,6 +22,9 @@ Easily set up Jenkins with Docker using this repository's configuration. Customi
 - Persist Jenkins data with the jenkins_home volume.
 - Securely handle SSH keys with the included SSH agent service.
 
+### Screenshot
+![image](https://github.com/vrushalrt/docker-jenkins/assets/4820187/7bc5b023-3a42-4da7-9ba1-66b765a03beb)
+
 ### Author
 <h3>Vrushal Raut</h3>
 <p align="left">
