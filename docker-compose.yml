@@ -1,0 +1,13 @@
+version: '3'
+services:
+  jenkins:
+    container_name: ${COMPOSE_PROJECT_NAME}-${JENKIN_VERSION}
+    image: jenkins/jenkins:${JENKIN_VERSION}
+    ports:
+      - "${HOST_MACHINE_PORT}:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+  ssh-agent:
+    image: jenkins/ssh-agent
+volumes:
+  jenkins_home:
